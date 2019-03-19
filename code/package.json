@@ -6,7 +6,6 @@
   "author": "hello@maxgallo.io",
   "license": "MIT",
   "dependencies": {
-    "mobx": "^5.5.0",
     "rxjs": "^6.3.3"
   }
 }

@@ -1,6 +1,5 @@
+# Reinventing RxJS
 Slides and example code of the talk
-
-![Title](title.png)
 
 ## Slides
 The slides are available as _pdf_ [slides.pdf](slides.pdf) or _markdown_ [slides.md](slides.md)
@@ -13,6 +12,7 @@ In the talk there is a live coding session.
 - before: [rxjs0.js](code/rxjs0.js)
 - after: [rxjs1.js](code/rxjs1.js)
 
+![Title](title.png)
 
 ## Learn More
 If you want to learn more about RxJS

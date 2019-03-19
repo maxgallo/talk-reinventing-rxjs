@@ -31,6 +31,8 @@ function createObservable(operator) {
     }
 }
 
+// sourceObservable --> currentObservable --> destinationObservable
+
 function map(mapFunction){
     return sourceObservable => {
         const currentObservable = createObservable(destinationNext => {

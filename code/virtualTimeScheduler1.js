@@ -5,7 +5,7 @@ const { VirtualTimeScheduler } = require('rxjs');
 const scheduler = new VirtualTimeScheduler();
 
 const source = interval(1000, scheduler)
-    .pipe(take(10));
+    .pipe(take(3600));
 
 source.subscribe(
     console.log,

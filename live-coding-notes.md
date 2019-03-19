@@ -9,6 +9,7 @@
     - Enable live coding color config
     - set laststatus=0 (remove Vim Airplane)
     - :set wrap/nowrap (if needed)
+    - 23/24 lines visible
 
 - TMUX
     - set status off (remove status bar)

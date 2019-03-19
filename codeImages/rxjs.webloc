@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>URL</key>
+	<string>https://carbon.now.sh/?bg=rgba(74%2C144%2C226%2C0)&amp;t=dracula&amp;wt=none&amp;l=auto&amp;ds=false&amp;dsyoff=20px&amp;dsblur=68px&amp;wc=true&amp;wa=true&amp;pv=21px&amp;ph=12px&amp;ln=true&amp;fm=Fira%20Code&amp;fs=14px&amp;lh=152%25&amp;si=false&amp;code=const%2520%257B%2520from%2520%257D%2520%253D%2520require(%27rxjs%27)%253B%250Aconst%2520%257B%2520map%252C%2520filter%2520%257D%2520%253D%2520require(%27rxjs%252Foperators%27)%253B%250A%250Aconst%2520observable%2520%253D%2520from(%255B1%252C%25202%252C%25203%252C%25204%252C%25205%255D)%250A%2520%2520%2520%2520.pipe(%250A%2520%2520%2520%2520%2520%2520%2520%2520map(x%2520%253D%253E%2520x%2520%252B%25201)%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520filter(x%2520%253D%253E%2520x%2520%2525%25202%2520%253D%253D%253D%25200)%252C%250A%2520%2520%2520%2520%2520%2520%2520%2520map(x%2520%253D%253E%2520x%2520-%25201)%252C%250A%2520%2520%2520%2520)%253B%250A%250Aobservable.subscribe(%250A%2520%2520%2520%2520val%2520%253D%253E%2520console.log(%27odd%253A%2520%27%252C%2520val)%252C%250A%2520%2520%2520%2520error%2520%253D%253E%2520console.error(error)%252C%250A%2520%2520%2520%2520()%2520%253D%253E%2520console.log(%27Completed!%27)%252C%250A)%253B%250A%252F%252F%2520odd%253A%25201%252C%2520odd%253A%25203%252C%2520odd%253A%25205%252C%2520Completed!&amp;es=2x&amp;wm=false</string>
+</dict>
+</plist>

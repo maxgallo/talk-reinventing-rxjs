@@ -1,15 +1,17 @@
 # Live Coding notes
 
-- Do not copy and paste, NEVER
+- Do not copy and paste, EVER
 - Real code on the side with iPad
 - Keep full implementation opened in another tab --> Autocompletion
+
 - VIM
     - ALEDisable
+    - Enable live coding color config
+    - set laststatus=0 (remove Vim Airplane)
+    - :set wrap/nowrap (if needed)
 
-## MobX
-
-1. `autorun` tracks all the accesses and store the reaction
-2. the `setters` will trigger all the reactions
+- TMUX
+    - set status off (remove status bar)
 
 ## RxJS
 

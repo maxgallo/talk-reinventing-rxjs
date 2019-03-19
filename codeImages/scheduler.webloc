@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>URL</key>
+	<string>https://carbon.now.sh/?bg=rgba(74%2C144%2C226%2C0)&amp;t=one-light&amp;wt=none&amp;l=auto&amp;ds=false&amp;dsyoff=20px&amp;dsblur=68px&amp;wc=true&amp;wa=true&amp;pv=8px&amp;ph=5px&amp;ln=true&amp;fm=Fira%20Code&amp;fs=14px&amp;lh=152%25&amp;si=false&amp;code=const%2520%257B%250A%2509from%252C%2520merge%252C%250A%2520%2520%2509asyncScheduler%252C%2520%2520%2520%2520%252F%252F%2520ASYNC%2520scheduler%250A%2520%2520%2509queueScheduler%252C%2520%2520%2520%2520%252F%252F%2520QUEUE%2520scheduler%250A%2520%2520%2509asapScheduler%252C%2520%2520%2520%2520%2520%252F%252F%2520ASAP%2520%2520scheduler%250A%257D%2520%253D%2520require(%27rxjs%27)%250A%250Aconst%2520asyncObservable%2520%253D%2520from(%255B%27async%27%255D%252C%2520asyncScheduler)%250Aconst%2520queueObservable%2520%253D%2520from(%255B%27queue%27%255D%252C%2520queueScheduler)%250Aconst%2520asapObservable%2520%2520%253D%2520from(%255B%27asap%27%255D%252C%2520%2520asapScheduler)%250A%250Aconst%2520observable%2520%253D%2520merge(%250A%2509asyncObservable%250A%2509queueObservable%252C%250A%2509asapObservable%252C%250A)%253B%250A%250Aobservable.subscribe(console.log)%250A%250Aconsole.log(%27--%253E%2520Subscribed!%27)&amp;es=2x&amp;wm=false</string>
+</dict>
+</plist>

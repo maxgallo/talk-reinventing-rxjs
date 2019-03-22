@@ -16,7 +16,7 @@ _About me:_ 🍝 💻 🇬🇧 🎶 🏍 📷 ✈️ ✍️
 
 _Principal Engineer_ @ DAZN
 
-<br />
+![inline](images/dazn.png)
 
 _twitter:_ @\_maxgallo
 _more:_ maxgallo.io

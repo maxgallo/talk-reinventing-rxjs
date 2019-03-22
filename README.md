@@ -26,5 +26,5 @@ What I used for these slides
 
 - Slides: [Deckset](https://www.decksetapp.com/)
 - Draws: [draw.io](https://www.draw.io)
-- Live Coding: Vim + [heaving configuration](https://github.com/maxgallo/dotfiles) + [nodemon](https://github.com/remy/nodemon) for hot reloading
+- Live Coding: Vim + [some configuration](https://github.com/maxgallo/dotfiles) + [nodemon](https://github.com/remy/nodemon) for hot reloading
 

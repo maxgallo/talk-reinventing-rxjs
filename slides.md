@@ -8,6 +8,7 @@
 
 ![right](images/me.jpg)
 
+
 # Hi 👋🏻
 #[fit] I'm __Max__ Gallo
 
@@ -134,18 +135,6 @@ _Operator_ 1 _-->_> _Operator_ 2 _-->_> _Operator_ 3
 
 ---
 
-![fit](codeImages/scheduler_light.png)
-
----
-
-![left fit](codeImages/scheduler_light.png)
-
-# __**Console**__
-
-![inline](codeImages/output.png)
-
----
-
 > Schedulers in RxJS are things that control _**the order of event emissions**_ (to Observers) and _**the speed of those event**_ emissions.
 -- André Staltz
 
@@ -156,70 +145,108 @@ _Operator_ 1 _-->_> _Operator_ 2 _-->_> _Operator_ 3
 
 ---
 
-Queue __*/*__ Asap __*/*__ Async __*/*__ AnimationFrame __*/*__ VirtualTime
+![fit](codeImages/scheduler_light.png)
+
+---
+
+![left fit](codeImages/scheduler_light.png)
+
+# __**Console**__
+
+![inline](codeImages/output.png)
+
+
+---
+
+
+#[fit] Queue __*/*__ Asap __*/*__ Async __*/*__ AnimationFrame
 
 ---
 
 ```
-                     requestAnimationFrame(task)
-                                 |
-                                 |
-Promise.resolve().then(task)     |
-			|                    |
+                                requestAnimationFrame(task)
+                                                 |
+    Promise.resolve().then(task)                 |
+                 |                               |
+                 |                               |
 ```
-
-Queue __*/*__ Asap __*/*__ Async __*/*__ AnimationFrame __*/*__ VirtualTime
+#[fit] Queue __*/*__ Asap __*/*__ Async __*/*__ AnimationFrame
 
 ```
-     |             |                          |
-synchronous        |                          | 
-                   |                          |
-           setInterval(task, delay)           |
-                                             ???
+     |                        |                          
+     |                        |                          
+synchronous                   |                           
+                              |                          
+                   setInterval(task, delay)
 ```
 
 ---
+
+__**Order _of event emissions_**__
+
+#[fit] Queue __*/*__ Asap __*/*__ Async __*/*__ AnimationFrame
+
+<br/>
+<br/>
+<br/>
+
+---
+
+__**Order _of event emissions_**__
+
+#[fit] Queue __*/*__ Asap __*/*__ Async __*/*__ AnimationFrame
+
+__**Speed _of event emissions_**__
+
+# __*/*__ virtualtime __*/*__
+
+---
+
 
 <br />
 
 #[fit] __*Virtual Time*__ scheduler 
 
 
-__**Bending Time:**__ Hands on 🙌 example
+_(_ Hands on 🙌 example _)_
 
 ---
 
 ![fill](images/bg.jpg)
-# Recap
+# We made it 🙌
 
 ---
 
-# __**>**__ Destroy 🧨
+# __**>**__ Disassemble
 
-### _Tear things apart to understand what's going on_
+### _Take things apart to understand what's going on_
 
 --- 
 
-# __**>**__ Reinvent 👷‍♀️
+# __**>**__ Reinvent
 
 ### _Build your own version_
 
 ---
 
 # __**>**__ Learn
-### _And Bend time of course_ ⏱
+### _Build means learn_
 
 ---
 
-Destroy __*/*__ Reinvent __*/*__ Learn
+# __**>**__ Share
+### _Tell others what you did_
 
-#[fit] Thank __you__ 🙏
+---
 
-<br />
+#[fit] Disassemble __*/*__ Reinvent __*/*__ Learn __*/*__ Share
 
-_slides_ [github.com/maxgallo/talk-reinventing-rxjs](https://github.com/maxgallo/talk-reinventing-rxjs)
 
 _twitter_ @\_maxgallo
 _other_ maxgallo.io
+
+#[fit] Thank __you__ 🙏
+
+_slides_ [github.com/maxgallo/talk-reinventing-rxjs](https://github.com/maxgallo/talk-reinventing-rxjs)
 
 

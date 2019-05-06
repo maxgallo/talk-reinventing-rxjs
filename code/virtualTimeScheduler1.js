@@ -12,6 +12,5 @@ source.subscribe(
     console.err,
     () => console.log('--> Completed!'),
 );
-console.log('--> Subscribed!')
 
 scheduler.flush();

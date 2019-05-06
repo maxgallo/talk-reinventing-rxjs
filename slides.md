@@ -14,7 +14,7 @@
 
 _About me:_ 🍝 💻 🇬🇧 🎶 🏍 📷 ✈️ ✍️
 
-_Principal Engineer_ @ DAZN
+_Principal Engineer_
 
 ![inline](images/dazn.png)
 
@@ -111,9 +111,9 @@ _Operator_ 1 _-->_> _Operator_ 2 _-->_> _Operator_ 3
 
 
 - _Made of_ reusable parts > **Streams**
+- Standard contract _between parts_
 - custom operators
 - Lazy evaluation
-- Standard contract _between parts_
 - Synchronous _by default_ > **Schedulers**
 
 <!--

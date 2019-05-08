@@ -6,7 +6,7 @@
 
 ---
 
-![right](images/me.jpg)
+![right 35%](images/me2.png)
 
 
 # Hi 👋🏻

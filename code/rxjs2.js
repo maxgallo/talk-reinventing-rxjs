@@ -1,7 +1,8 @@
 // const { from } = require('rxjs');
 // const { map, filter } = require('rxjs/operators');
 // const { map } = require('rxjs/operators');
-const { filter } = require('rxjs/operators');
+// const { filter } = require('rxjs/operators');
+// const { Observable } = require('rxjs');
 
 
 // observer
@@ -18,10 +19,9 @@ function from(initialData){
         pipe: (...pipeFunctions) => {
             return {
                 subscribe: (onNext, onError, onComplete) => {
-
-                    const dataObservable = new Observable({
-                        call: observer => initialData.forEach(observer.next.bind(observer)),
-                    });
+                    const dataObservable = new Observable(
+                        observer => initialData.forEach(observer.next.bind(observer)),
+                    );
 
                     let currentObservable = dataObservable;
 
@@ -42,10 +42,10 @@ function from(initialData){
     }
 }
 
-const map = (mapFunction) => (sourceObservable) => {
-    return sourceObservable.lift({
-        call: observer => {
-            sourceObservable.subscribe({
+const map = (mapFunction) => (source) => {
+    return new Observable(
+        observer => {
+            source.subscribe({
                 next(value){
                     const newValue = mapFunction(value);
                     observer.next(newValue);
@@ -54,7 +54,23 @@ const map = (mapFunction) => (sourceObservable) => {
                 complete() { observer.complete() },
             })
         }
-    })
+    )
+}
+
+const filter = (filterFunction) => (source) => {
+    return new Observable(
+        observer => {
+            source.subscribe({
+                next(value){
+                    if(filterFunction(value)) {
+                        observer.next(value);
+                    }
+                },
+                error(err) { observer.error(err) },
+                complete() { observer.complete() },
+            })
+        }
+    )
 }
 
 class Observable {
@@ -62,27 +78,18 @@ class Observable {
         this.operator = operator
     }
     subscribe(observer) {
-        this.operator.call(observer, this.source)
+        // if (typeof this.operator === 'object') { // for lib compatibility
+            // return this.operator.call(observer, this.source)
+        // }
+        this.operator(observer)
     }
-    lift(operator) {
-        const obs = new Observable();
-        obs.source = this;
-        obs.operator = operator;
-        return obs;
-    }
+    // lift(operator) { // just for Lib compatibility
+        // const obs = new Observable();
+        // obs.source = this;
+        // obs.operator = operator;
+        // return obs;
+    // }
 }
-// const pow = (n) => (source) =>
-    // new Observable(observer => {
-        // return source.subscribe({
-            // next(x) {
-                // observer.next(
-                    // Math.pow(x, n)
-                // );
-            // },
-            // error(err) { observer.error(err); },
-            // complete() { observer.complete(); }
-        // });
-    // });
 
 const observable = from([1, 2, 3, 4, 5])
     .pipe(

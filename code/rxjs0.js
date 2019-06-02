@@ -8,8 +8,8 @@ const observable = from([1, 2, 3, 4, 5])
         map(x => x - 1),
     );
 
-observable.subscribe(
-    val   => console.log('odd: ', val),
-    error => console.error(error),
-    ()    => console.log('Completed'),
-);
+observable.subscribe({
+    next     : val   => console.log('odd: ', val),
+    error    : error => console.error(error),
+    complete : ()    => console.log('Completed'),
+});

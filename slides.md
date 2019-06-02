@@ -100,9 +100,9 @@ It's already available in many browser.
 <br />
 <br />
 <br />
-_Operator_ 1 _-->_> _Operator_ 2 _-->_> _Operator_ 3
+         _Operator_ 1 _-->_> _Operator_ 2 _-->_> _Operator_ 3
 
-![original 150%](diagrams/rxjsCode/rxjsCode.pdf)
+![original 130%](diagrams/rxjsCode/rxjsCode.pdf)
 
 ---
 

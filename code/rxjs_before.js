@@ -11,5 +11,5 @@ const observable = from([1, 2, 3, 4, 5])
 observable.subscribe({
     next     : val   => console.log('odd: ', val),
     error    : error => console.error(error),
-    complete : ()    => console.log('Completed'),
+    complete : ()    => console.log('DONE!'),
 });

@@ -5,12 +5,12 @@ Slides and example code of the talk
 The slides are available as _pdf_ [slides.pdf](slides.pdf) or _markdown_ [slides.md](slides.md)
 
 ## Live Coding
-In the talk there is a live coding session.
-"Before" is what we started with, and "after" is where we arrived.
+In the talk there is a live coding session divided into three parts
 
-### Live coding: RxJS
-- before: [rxjs0.js](code/rxjs0.js)
-- after: [rxjs1.js](code/rxjs1.js)
+### Live coding
+1. **before**: [rxjs_before.js](code/rxjs_before.js) Initial state
+2. **after**: [rxjs_after.js](code/rxjs_after.js) Full rewrite
+3. **hybrid**: [rxjs_after_hybrid.js](code/rxjs_after_hybrid.js) Custom and library operators at the same time
 
 ![Title](title.png)
 

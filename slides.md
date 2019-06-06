@@ -23,24 +23,10 @@ _more:_ maxgallo.io
 
 ---
 
-[.build-lists: true]
-
-#[fit] Here's __the Agenda__
-<br/>
-  
-1. Introduction
-- _Reinventing_ RxJS
-- _Deep Dive_ Schedulers
-
----
-
 ![fill](images/bg.jpg)
-# Introduction
+# Introducing __RxJS__
 
 ---
-
-#[fit] Introducing __RxJS__
-<br/>
 
 _Part of the_ Reactive X _Family_
 
@@ -51,18 +37,21 @@ with observable streams
 
 ![right](images/me1996.jpg)
 
-# [fit] Reinventing
-## [fit] the wheel
+# [fit] Take
+## [fit] things apart
 
-## _by_
+## _and_
 
-# __taking things apart__
+# __reinvent__
+# __the wheel__
+
 
 ^ - This is me when I was six
 - I like to understand things by taking them apart
 - and watch inside to understand how they work
 
 ---
+
 
 ![fill](images/bg.jpg)
 #[fit] Reinventing __RxJS__
@@ -78,10 +67,12 @@ with observable streams
 
 <br/>
 
-- Syntax _is library specific_
+- Syntax _is library specific_[^1]
 - Explicit Subscription
 - Observable _[TC39 stage 1](https://github.com/tc39/proposals#stage-1)_
 - Pipeline operator _[TC39 stage 1](https://github.com/tc39/proposals#stage-1)_
+
+[^1]: 👋 mutation observer
 
 ^ MutationObserver is a method for observing and reacting to changes to the DOM.
 It's already available in many browser.
@@ -145,53 +136,6 @@ It's already available in many browser.
 
 ---
 
-![fit](codeImages/scheduler_light.png)
-
----
-
-![left fit](codeImages/scheduler_light.png)
-
-# __**Console**__
-
-![inline](codeImages/output.png)
-
-
----
-
-
-#[fit] Queue __*/*__ Asap __*/*__ Async __*/*__ AnimationFrame
-
----
-
-```
-                                requestAnimationFrame(task)
-                                                 |
-    Promise.resolve().then(task)                 |
-                 |                               |
-                 |                               |
-```
-#[fit] Queue __*/*__ Asap __*/*__ Async __*/*__ AnimationFrame
-
-```
-     |                        |                          
-     |                        |                          
-synchronous                   |                           
-                              |                          
-                   setInterval(task, delay)
-```
-
----
-
-__**Order _of event emissions_**__
-
-#[fit] Queue __*/*__ Asap __*/*__ Async __*/*__ AnimationFrame
-
-<br/>
-<br/>
-<br/>
-
----
-
 __**Order _of event emissions_**__
 
 #[fit] Queue __*/*__ Asap __*/*__ Async __*/*__ AnimationFrame
@@ -202,15 +146,6 @@ __**Speed _of event emissions_**__
 
 ---
 
-
-<br />
-
-#[fit] __*Virtual Time*__ scheduler 
-
-
-_(_ Hands on 🙌 example _)_
-
----
 
 ![fill](images/bg.jpg)
 # We made it 🙌

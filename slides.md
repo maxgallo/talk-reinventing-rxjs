@@ -1,8 +1,5 @@
 # [fit] Reinventing __RxJS__
-
-
-[.footer: @_maxgallo ]
-^ - rise your hand if you use RxJS in production
+### _[ @\_maxgallo ]_
 
 ---
 
@@ -12,9 +9,7 @@
 # Hi 👋🏻
 #[fit] I'm __Max__ Gallo
 
-_About me:_ 🍝 💻 🇬🇧 🎶 🏍 📷 ✈️ ✍️
-
-_Principal Engineer_
+_About me:_ 🍝 💻 🇮🇹🇬🇧 🎶 🏍 📷 ✈️ ✍️
 
 ![inline](images/dazn.png)
 
@@ -28,10 +23,10 @@ _more:_ maxgallo.io
 
 ---
 
-_Part of the_ Reactive X _Family_
+### _Part of the_ Reactive X _Family_
 
-> API for asynchronous programming
-with observable streams
+## __API for asynchronous programming with observable streams__
+
 
 ---
 
@@ -65,12 +60,11 @@ with observable streams
 [.build-lists: true]
 # __RxJS__ code _first impressions_
 
-<br/>
 
 - Syntax _is library specific_[^1]
-- Explicit Subscription
 - Observable _[TC39 stage 1](https://github.com/tc39/proposals#stage-1)_
 - Pipeline operator _[TC39 stage 1](https://github.com/tc39/proposals#stage-1)_
+- Explicit Subscription
 
 [^1]: 👋 mutation observer
 

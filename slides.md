@@ -9,40 +9,40 @@
 ![right 35%](images/me.png)
 
 
-# Hi 👋🏻
-#[fit] I'm __Max__ Gallo
+# 👋🏻👋🏻👋🏻
+#[fit] __Max__ Gallo
 
-_About me:_ 🍝 💻 🇬🇧 🎶 🏍 📷 ✈️ ✍️
+🇮🇹 🇬🇧 🍝 💻  🎶 🏍 📷 ✈️ ✍️
 
 _Principal Engineer_
 
 ![inline](images/dazn.png)
 
 _twitter:_ @\_maxgallo
-_more:_ maxgallo.io
+_altro:_ maxgallo.io
 
 ---
 
 [.build-lists: true]
 
-#[fit] Here's __the Agenda__
+#[fit] __Agenda__ di oggi
 <br/>
   
-1. Introduction
-- _Reinventing_ RxJS
-- _Deep Dive_ Schedulers
+1. _Introduzione_
+- _Reinventiamo_ RxJS
+- _Approfondimento_ Schedulers
 
 ---
 
 ![fill](images/bg.jpg)
-# Introduction
+# Introduzione
 
 ---
 
-#[fit] Introducing __RxJS__
+#[fit] Cosa e' __RxJS__ ?
 <br/>
 
-_Part of the_ Reactive X _Family_
+_Fa parte della famiglia_ Reactive X
 
 > API for asynchronous programming
 with observable streams
@@ -51,12 +51,11 @@ with observable streams
 
 ![right](images/me1996.jpg)
 
-# [fit] Reinventing
-## [fit] the wheel
+# [fit] Reinventare
+## [fit] la ruota
 
-## _by_
 
-# __taking things apart__
+# __smontando le cose__
 
 ^ - This is me when I was six
 - I like to understand things by taking them apart
@@ -65,7 +64,7 @@ with observable streams
 ---
 
 ![fill](images/bg.jpg)
-#[fit] Reinventing __RxJS__
+#[fit] Reinventare __RxJS__
 
 ---
 
@@ -74,12 +73,12 @@ with observable streams
 ---
 
 [.build-lists: true]
-# __RxJS__ code _first impressions_
+# __RxJS__ prime _impressioni_
 
 <br/>
 
-- Syntax _is library specific_
-- Explicit Subscription
+- Sintassi _> specifica della libreria_
+- Subscription _> esplicita_
 - Observable _[TC39 stage 1](https://github.com/tc39/proposals#stage-1)_
 - Pipeline operator _[TC39 stage 1](https://github.com/tc39/proposals#stage-1)_
 
@@ -88,7 +87,7 @@ It's already available in many browser.
 
 ---
 
-### 💡 _let's reinvent_ RxJS
+### 💡 _reinventiamo_ RxJS
 
 ---
 
@@ -107,14 +106,14 @@ It's already available in many browser.
 ---
 
 [.build-lists: true]
-# __RxJS__ *from the inside*
+# __RxJS__ *dall'interno*
 
 
-- _Made of_ reusable parts > **Streams**
-- Standard contract _between parts_
+- _Fatto di_ parti riusabili > **Streams**
+- Contratto Standard _tra le parti_
 - custom operators
 - Lazy evaluation
-- Synchronous _by default_ > **Schedulers**
+- Sincrono _di default_ > **Schedulers**
 
 <!--
 
@@ -131,17 +130,17 @@ It's already available in many browser.
 ---
 
 ![fill](images/bg.jpg)
-#[fit] Deep Dive __Schedulers__
+#[fit] Approfondimento __Schedulers__
 
 ---
 
-> Schedulers in RxJS are things that control _**the order of event emissions**_ (to Observers) and _**the speed of those event**_ emissions.
+> _**Gli Schedulers in RxJS sono le cose che controllano**_ l'ordine di emissione degli eventi _**(agli Observers) e la**_ velocità di emissione degli eventi.
 -- André Staltz
 
 ---
 
-#[fit] __**Order**__ of event emissions
-#[fit] __**Speed**__ of event emissions
+#[fit] __**Ordine**__ di emissione _**degli eventi**_
+#[fit] __**Velocità**__ di emissione _**degli eventi**_
 
 ---
 
@@ -182,7 +181,7 @@ synchronous                   |
 
 ---
 
-__**Order _of event emissions_**__
+__**ordine _di emissione degli eventi_**__
 
 #[fit] Queue __*/*__ Asap __*/*__ Async __*/*__ AnimationFrame
 
@@ -192,11 +191,11 @@ __**Order _of event emissions_**__
 
 ---
 
-__**Order _of event emissions_**__
+__**ordine _di emissione degli eventi_**__
 
 #[fit] Queue __*/*__ Asap __*/*__ Async __*/*__ AnimationFrame
 
-__**Speed _of event emissions_**__
+__**velocita' _di emissione degli eventi_**__
 
 # __*/*__ virtualtime __*/*__
 
@@ -208,45 +207,45 @@ __**Speed _of event emissions_**__
 #[fit] __*Virtual Time*__ scheduler 
 
 
-_(_ Hands on 🙌 example _)_
+_(_ esempio 🙌 hands on _)_
 
 ---
 
 ![fill](images/bg.jpg)
-# We made it 🙌
+# Ce l'abbiamo fatta 🙌
 
 ---
 
-# __**>**__ Disassemble
+# __**>**__ Smonta
 
-### _Take things apart to understand what's going on_
+### _Guarda come funzionano le cose dentro_
 
 --- 
 
-# __**>**__ Reinvent
+# __**>**__ Crea
 
-### _Build your own version_
-
----
-
-# __**>**__ Learn
-### _Build means learn_
+### _Creati la tua versione_
 
 ---
 
-# __**>**__ Share
-### _Tell others what you did_
+# __**>**__ Impara
+### _Creare vuol dire imparare_
 
 ---
 
-#[fit] Disassemble __*/*__ Reinvent __*/*__ Learn __*/*__ Share
+# __**>**__ Condividi
+### _Racconta agli altri cosa hai fatto_
+
+---
+
+#[fit] Smonta __*/*__ Crea __*/*__ Impara __*/*__ Condividi
 
 
 _twitter_ @\_maxgallo
-_other_ maxgallo.io
+_altro_ maxgallo.io
 
-#[fit] Thank __you__ 🙏
+#[fit] __Grazie__ 🙏
 
-_slides_ [github.com/maxgallo/talk-reinventing-rxjs](https://github.com/maxgallo/talk-reinventing-rxjs)
+[github.com/maxgallo/talk-reinventing-rxjs](https://github.com/maxgallo/talk-reinventing-rxjs)
 
 

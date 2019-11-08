@@ -49,6 +49,11 @@ with observable streams
 
 ---
 
+
+![right](images/me1996.jpg)
+
+---
+
 ![right](images/me1996.jpg)
 
 # [fit] Reinventare
